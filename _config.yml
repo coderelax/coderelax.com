@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://filipemoreira.com
+url: http://coderelax.com
 title: Freelance Mobile & Web Developer
 subtitle: A Ruby & Javascript hacker.
 author: Filipe Moreira
@@ -64,13 +64,13 @@ portfolio_asides: []
 # ----------------------- #
 
 # Github repositories
-github_user: filipeamoreira
+github_user: coderelax
 github_repo_count: 110
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user: filipeamoreira
+twitter_user: coderelax
 twitter_tweet_count: 4
 twitter_show_replies: false
 twitter_follow_button: true
