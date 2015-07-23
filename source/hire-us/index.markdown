@@ -8,9 +8,9 @@ footer: true
 
 [Coderelax](coderelax.com) is run by Filipe Moreira. He has more than five years experience in building custom web solutions for its customers.
 
-You can hire use to work on your next project on a daily or weekly rate. We also an network of like minded and capable freelance workers in your project needs to human power.
+You can hire him to work on your next project on a daily or weekly rate. We also have a network of capable freelance developers in case your project needs it.
 
-Our speciality is Ruby and JavaScript related web apps. However we believe in picking the best tool for the job.
+Our speciality is Ruby and JavaScript related web apps.
 
 Get in touch:
 

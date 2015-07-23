@@ -9,27 +9,25 @@ categories: [Ruby, Rails, MongoDB]
 Recently I had to implement full text search on a Ruby on Rails application I was developing and based on my needs the easiest way to do it was building a helper array with the keywords needed and search using those keywords.
 
 To illustrate this I've implemented stock tickers search using the awesome [rstat.us](http://rstat.us/) project. Have a look at my [Github fork.](https://github.com/filipeamoreira/rstat.us)
-    
 
-``` ruby update.rb
+```ruby update.rb
 class Update
 ...
     # Adds stocks array mentions
     key: stocks, Array, :default => []
-    
+
   # Parses update text and build stocks array for simpler search
   def parse_symbols
     stocks = []
     self.text.split(' ').each do |update|
       stocks << update if update[0] == '$'
     end
-    return stocks  
-  end    
+    return stocks
+  end
 end
 ```
-
 and then the controller:
-``` ruby updates_controller.rb
+```ruby updates_controller.rb
 class UpdatesController < ApplicationController
 ...
     def create
@@ -44,9 +42,10 @@ class UpdatesController < ApplicationController
     end
 end
 ```
+
 So it basically looks for words starting with $ and adds it to the stocks array. We can then search using
 
-``` ruby Perform search using MongoDB built in text search
+```ruby Perform search using MongoDB built in text search
     Update.all(:conditions => {:stocks => '$goog'})
 ```
 

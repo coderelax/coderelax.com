@@ -10,13 +10,11 @@ categories:
 
 Here I highlight my top five features:
 
-
 ## Strong Parameters
 
 Rails Mass assignment feature is quite handy but can be really dangerous. Last year Github was [compromised by an attack based on it](http://www.infoq.com/news/2012/03/GitHub-Compromised). Rails 4 has a new way of dealing with mass assignment each basically pushes the responsibility out of the model and into the controller where it belongs.
 
 The new approach was already available as a plugin called [strong_parameters](https://github.com/rails/strong_parameters) and dhh as a blog post [explaining it in detail](http://weblog.rubyonrails.org/2012/3/21/strong-parameters/).
-
 
 ## Live Streaming
 

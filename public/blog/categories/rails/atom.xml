@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Rails | Freelance Mobile & Web Developer]]></title>
+  <title><![CDATA[Category: rails | Freelance Mobile & Web Developer]]></title>
   <link href="http://coderelax.com/blog/categories/rails/atom.xml" rel="self"/>
   <link href="http://coderelax.com/"/>
-  <updated>2015-07-23T12:50:49+01:00</updated>
+  <updated>2015-07-23T13:53:38+01:00</updated>
   <id>http://coderelax.com/</id>
   <author>
     <name><![CDATA[Filipe Moreira]]></name>
@@ -33,7 +33,7 @@
 
 <p>You can install and run pry with:</p>
 
-<p>``` bash</p>
+<p>```bash</p>
 
 <pre><code>$ gem install pry
 $ pry
@@ -45,7 +45,7 @@ $ pry
 
 <p>On IRB initialization file load Pry instead:</p>
 
-<p>``` ruby ~/.irbrc</p>
+<p>```ruby ~/.irbrc</p>
 
 <pre><code>begin
   require 'pry'
@@ -56,12 +56,13 @@ rescue LoadError =&gt; e
 end
 </code></pre>
 
-<p>```
-This will load try to load Pry and if failed will print a message to stdout. The exit command after Pry&rsquo;s invocation is to avoid going back to IRB after the Pry session has finished.</p>
+<p>```</p>
+
+<p>This will load try to load Pry and if failed will print a message to stdout. The exit command after Pry&rsquo;s invocation is to avoid going back to IRB after the Pry session has finished.</p>
 
 <p>The other part of the configuration is done on .pryrc</p>
 
-<p>``` ruby ~/.pryrc</p>
+<p>```ruby ~/.pryrc</p>
 
 <pre><code>if defined?(Rails)
   begin
@@ -74,8 +75,9 @@ This will load try to load Pry and if failed will print a message to stdout. The
 end
 </code></pre>
 
-<p>```
-This will allow you to continue using rails console but using pry instead of irb. I also like to use awesome_print so I added this to my config file:</p>
+<p>```</p>
+
+<p>This will allow you to continue using rails console but using pry instead of irb. I also like to use awesome_print so I added this to my config file:</p>
 
 <p><code>ruby ~/.pryrc
 begin
@@ -84,8 +86,9 @@ begin
 rescue LoadError =&gt; err
    warn "=&gt; Unable to load awesome_print"
 end
-</code>
-This will try to load awesome_print gem and failing to do that will print a message to stdout.</p>
+</code></p>
+
+<p>This will try to load awesome_print gem and failing to do that will print a message to stdout.</p>
 
 <p>For more information on Pry see:</p>
 
@@ -108,7 +111,7 @@ This will try to load awesome_print gem and failing to do that will print a mess
 
 <p>To illustrate this I&rsquo;ve implemented stock tickers search using the awesome <a href="http://rstat.us/">rstat.us</a> project. Have a look at my <a href="https://github.com/filipeamoreira/rstat.us">Github fork.</a></p>
 
-<p>``` ruby update.rb
+<p>```ruby update.rb
 class Update
 &hellip;</p>
 
@@ -123,15 +126,14 @@ key: stocks, Array, :default =&gt; []
 self.text.split(' ').each do |update|
   stocks &lt;&lt; update if update[0] == '$'
 end
-return stocks  
+return stocks
 </code></pre>
 
-<p>  end  <br/>
+<p>  end
 end
-```</p>
-
-<p>and then the controller:
-``` ruby updates_controller.rb
+<code>
+and then the controller:
+</code>ruby updates_controller.rb
 class UpdatesController &lt; ApplicationController
 &hellip;</p>
 
@@ -148,10 +150,11 @@ end
 </code></pre>
 
 <p>end
-```
-So it basically looks for words starting with $ and adds it to the stocks array. We can then search using</p>
+```</p>
 
-<p>``` ruby Perform search using MongoDB built in text search</p>
+<p>So it basically looks for words starting with $ and adds it to the stocks array. We can then search using</p>
+
+<p>```ruby Perform search using MongoDB built in text search</p>
 
 <pre><code>Update.all(:conditions =&gt; {:stocks =&gt; '$goog'})
 </code></pre>

@@ -18,7 +18,7 @@ Some of the additional features pry offers us include:
 
 You can install and run pry with:
 
-``` bash
+```bash
     $ gem install pry
     $ pry
 ```
@@ -27,7 +27,7 @@ They are a few ways to integrate pry with Rails but the one I like it the most c
 
 On IRB initialization file load Pry instead:
 
-``` ruby ~/.irbrc
+```ruby ~/.irbrc
     begin
       require 'pry'
       Pry.start
@@ -36,11 +36,12 @@ On IRB initialization file load Pry instead:
       warn "=> Unable to load pry"
     end
 ```
+
 This will load try to load Pry and if failed will print a message to stdout. The exit command after Pry's invocation is to avoid going back to IRB after the Pry session has finished.
 
 The other part of the configuration is done on .pryrc
 
-``` ruby ~/.pryrc
+```ruby ~/.pryrc
     if defined?(Rails)
       begin
         require "rails/console/app"
@@ -51,6 +52,7 @@ The other part of the configuration is done on .pryrc
       end
     end
 ```
+
 This will allow you to continue using rails console but using pry instead of irb. I also like to use awesome_print so I added this to my config file:
 
 ```ruby ~/.pryrc
@@ -61,6 +63,7 @@ rescue LoadError => err
    warn "=> Unable to load awesome_print"
 end
 ```
+
 This will try to load awesome_print gem and failing to do that will print a message to stdout.
 
 For more information on Pry see:

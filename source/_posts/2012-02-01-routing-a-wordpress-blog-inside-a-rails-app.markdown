@@ -3,7 +3,7 @@ layout: post
 title: "Routing a Wordpress blog inside a Rails app"
 date: 2012-02-01 07:22
 comments: false
-categories: 
+categories:
 ---
 
 This post describe how to host a subdomain route for a alien application inside a Ruby on Rails app. Wordpress is used here as an example but these instructions work with any outside url.
@@ -14,7 +14,6 @@ However what about when you have no control over the web server layer (such as w
 
 ```ruby config/routes.rb
  match "/blog" => redirect("http://yourwordpressblog.com"), :as => :blog
-
 ```
 
 This will match any '/blog' route and redirect to your chosen domain.

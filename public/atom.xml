@@ -4,7 +4,7 @@
   <title><![CDATA[Freelance Mobile & Web Developer]]></title>
   <link href="http://coderelax.com/atom.xml" rel="self"/>
   <link href="http://coderelax.com/"/>
-  <updated>2015-07-23T12:50:49+01:00</updated>
+  <updated>2015-07-23T13:53:38+01:00</updated>
   <id>http://coderelax.com/</id>
   <author>
     <name><![CDATA[Filipe Moreira]]></name>
@@ -49,9 +49,9 @@
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># production.rb</span>
-</span><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">queue</span> <span class="o">=</span> <span class="ss">ActiveSupport</span><span class="p">:</span><span class="ss">:Queue</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">queue</span> <span class="o">=</span> <span class="no">ActiveSupport</span><span class="o">::</span><span class="no">Queue</span><span class="o">.</span><span class="n">new</span>
 </span><span class='line'><span class="c1"># In this case to use Sidekiq as the Action Mailer backend</span>
-</span><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">queue</span> <span class="o">=</span> <span class="ss">Sidekiq</span><span class="p">:</span><span class="ss">:Client</span><span class="o">::</span><span class="no">Queue</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">queue</span> <span class="o">=</span> <span class="no">Sidekiq</span><span class="o">::</span><span class="no">Client</span><span class="o">::</span><span class="no">Queue</span><span class="o">.</span><span class="n">new</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -152,7 +152,7 @@
 <span class='line-number'>6</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">begin</span>
 </span><span class='line'>  <span class="nb">require</span> <span class="s2">&quot;awesome_print&quot;</span>
-</span><span class='line'>  <span class="no">Pry</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">print</span> <span class="o">=</span> <span class="nb">proc</span> <span class="p">{</span><span class="o">|</span><span class="n">output</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span> <span class="ss">Pry</span><span class="p">:</span><span class="ss">:Helpers</span><span class="o">::</span><span class="no">BaseHelpers</span><span class="o">.</span><span class="n">stagger_output</span><span class="p">(</span><span class="s2">&quot;=&gt; </span><span class="si">#{</span><span class="n">value</span><span class="o">.</span><span class="n">ai</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">output</span><span class="p">)}</span>
+</span><span class='line'>  <span class="no">Pry</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">print</span> <span class="o">=</span> <span class="nb">proc</span> <span class="p">{</span><span class="o">|</span><span class="n">output</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span> <span class="no">Pry</span><span class="o">::</span><span class="no">Helpers</span><span class="o">::</span><span class="no">BaseHelpers</span><span class="o">.</span><span class="n">stagger_output</span><span class="p">(</span><span class="s2">&quot;=&gt; </span><span class="si">#{</span><span class="n">value</span><span class="o">.</span><span class="n">ai</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">output</span><span class="p">)}</span>
 </span><span class='line'><span class="k">rescue</span> <span class="no">LoadError</span> <span class="o">=&gt;</span> <span class="n">err</span>
 </span><span class='line'>   <span class="nb">warn</span> <span class="s2">&quot;=&gt; Unable to load awesome_print&quot;</span>
 </span><span class='line'><span class="k">end</span>

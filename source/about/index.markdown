@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About Filipe Moreira"
+title: "About Coderelax"
 comments: false
 sharing: false
 footer: true
@@ -8,7 +8,7 @@ footer: true
 
 <img src="/images/filipemoreira.jpg" alt="Filipe Moreira" class='about-image'/>
 
-My name is Filipe Moreira and I'm a freelance web and mobile developer currently focusing on Ruby on Rails and Javascript applications.
+My name is Filipe Moreira and Coderelax is my web consultancy company. I'm a freelance web and mobile developer currently focusing on Ruby on Rails and Javascript applications.
 
 I also contribute to open source projects. Check my [Github profile](https://github.com/filipeamoreira) for more details.
 

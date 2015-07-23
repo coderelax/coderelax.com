@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: MongoDB | Freelance Mobile & Web Developer]]></title>
+  <title><![CDATA[Category: mongodb | Freelance Mobile & Web Developer]]></title>
   <link href="http://coderelax.com/blog/categories/mongodb/atom.xml" rel="self"/>
   <link href="http://coderelax.com/"/>
-  <updated>2015-07-23T12:50:49+01:00</updated>
+  <updated>2015-07-23T13:53:38+01:00</updated>
   <id>http://coderelax.com/</id>
   <author>
     <name><![CDATA[Filipe Moreira]]></name>
@@ -22,7 +22,7 @@
 
 <p>To illustrate this I&rsquo;ve implemented stock tickers search using the awesome <a href="http://rstat.us/">rstat.us</a> project. Have a look at my <a href="https://github.com/filipeamoreira/rstat.us">Github fork.</a></p>
 
-<p>``` ruby update.rb
+<p>```ruby update.rb
 class Update
 &hellip;</p>
 
@@ -37,15 +37,14 @@ key: stocks, Array, :default =&gt; []
 self.text.split(' ').each do |update|
   stocks &lt;&lt; update if update[0] == '$'
 end
-return stocks  
+return stocks
 </code></pre>
 
-<p>  end  <br/>
+<p>  end
 end
-```</p>
-
-<p>and then the controller:
-``` ruby updates_controller.rb
+<code>
+and then the controller:
+</code>ruby updates_controller.rb
 class UpdatesController &lt; ApplicationController
 &hellip;</p>
 
@@ -62,10 +61,11 @@ end
 </code></pre>
 
 <p>end
-```
-So it basically looks for words starting with $ and adds it to the stocks array. We can then search using</p>
+```</p>
 
-<p>``` ruby Perform search using MongoDB built in text search</p>
+<p>So it basically looks for words starting with $ and adds it to the stocks array. We can then search using</p>
+
+<p>```ruby Perform search using MongoDB built in text search</p>
 
 <pre><code>Update.all(:conditions =&gt; {:stocks =&gt; '$goog'})
 </code></pre>
