@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Freelance Mobile & Web Developer]]></title>
-  <link href="http://filipemoreira.com/atom.xml" rel="self"/>
-  <link href="http://filipemoreira.com/"/>
-  <updated>2013-11-19T18:38:24+01:00</updated>
-  <id>http://filipemoreira.com/</id>
+  <link href="http://coderelax.com/atom.xml" rel="self"/>
+  <link href="http://coderelax.com/"/>
+  <updated>2015-07-23T12:50:49+01:00</updated>
+  <id>http://coderelax.com/</id>
   <author>
     <name><![CDATA[Filipe Moreira]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[My Top Five Rails 4 Features]]></title>
-    <link href="http://filipemoreira.com/blog/2013/11/07/my-top-five-rails-4-features/"/>
-    <updated>2013-11-07T18:03:00+01:00</updated>
-    <id>http://filipemoreira.com/blog/2013/11/07/my-top-five-rails-4-features</id>
+    <link href="http://coderelax.com/blog/2013/11/07/my-top-five-rails-4-features/"/>
+    <updated>2013-11-07T18:03:00+00:00</updated>
+    <id>http://coderelax.com/blog/2013/11/07/my-top-five-rails-4-features</id>
     <content type="html"><![CDATA[<p><a href="http://weblog.rubyonrails.org/2013/6/25/Rails-4-0-final/">Rails 4</a> was released last June and version <a href="http://weblog.rubyonrails.org/2013/11/1/Rails-4-0-1-has-been-released/">4.0.1</a> at the beginning of this month. It should be noted that Rails 4 requires Ruby 1.9.3 with Ruby 2.0 being recommended.</p>
 
 <p>Here I highlight my top five features:</p>
@@ -71,9 +71,9 @@
   
   <entry>
     <title type="html"><![CDATA[Using Pry With Rails]]></title>
-    <link href="http://filipemoreira.com/blog/2012/03/09/using-pry-with-rails/"/>
-    <updated>2012-03-09T10:00:00+01:00</updated>
-    <id>http://filipemoreira.com/blog/2012/03/09/using-pry-with-rails</id>
+    <link href="http://coderelax.com/blog/2012/03/09/using-pry-with-rails/"/>
+    <updated>2012-03-09T10:00:00+00:00</updated>
+    <id>http://coderelax.com/blog/2012/03/09/using-pry-with-rails</id>
     <content type="html"><![CDATA[<p><a href="http://pry.github.com/">Pry</a> is a IRB replacement with some very nice additional features. I&rsquo;ll link to additional resources at the end of this post.</p>
 
 <p>Some of the additional features pry offers us include:</p>
@@ -175,9 +175,9 @@
   
   <entry>
     <title type="html"><![CDATA[Routing a Wordpress Blog Inside a Rails App]]></title>
-    <link href="http://filipemoreira.com/blog/2012/02/01/routing-a-wordpress-blog-inside-a-rails-app/"/>
-    <updated>2012-02-01T07:22:00+01:00</updated>
-    <id>http://filipemoreira.com/blog/2012/02/01/routing-a-wordpress-blog-inside-a-rails-app</id>
+    <link href="http://coderelax.com/blog/2012/02/01/routing-a-wordpress-blog-inside-a-rails-app/"/>
+    <updated>2012-02-01T07:22:00+00:00</updated>
+    <id>http://coderelax.com/blog/2012/02/01/routing-a-wordpress-blog-inside-a-rails-app</id>
     <content type="html"><![CDATA[<p>This post describe how to host a subdomain route for a alien application inside a Ruby on Rails app. Wordpress is used here as an example but these instructions work with any outside url.</p>
 
 <p>If you do have control over the web server you can use a url rewrite to accomplish this. See steps for doing this using <a href="http://www.igvita.com/2007/07/04/integrating-wordpress-and-rails/">Apache</a> or <a href="http://www.kalzumeus.com/2009/08/22/using-wordpress-and-rails-on-the-same-domain/">nginx</a>.</p>
@@ -195,9 +195,9 @@
   
   <entry>
     <title type="html"><![CDATA[Full Text Search With MongoDB]]></title>
-    <link href="http://filipemoreira.com/blog/2012/01/24/full-text-search-with-mongodb/"/>
-    <updated>2012-01-24T23:10:00+01:00</updated>
-    <id>http://filipemoreira.com/blog/2012/01/24/full-text-search-with-mongodb</id>
+    <link href="http://coderelax.com/blog/2012/01/24/full-text-search-with-mongodb/"/>
+    <updated>2012-01-24T23:10:00+00:00</updated>
+    <id>http://coderelax.com/blog/2012/01/24/full-text-search-with-mongodb</id>
     <content type="html"><![CDATA[<p>Recently I had to implement full text search on a Ruby on Rails application I was developing and based on my needs the easiest way to do it was building a helper array with the keywords needed and search using those keywords.</p>
 
 <p>To illustrate this I&rsquo;ve implemented stock tickers search using the awesome <a href="http://rstat.us/">rstat.us</a> project. Have a look at my <a href="https://github.com/filipeamoreira/rstat.us">Github fork.</a></p>
@@ -279,9 +279,9 @@
   
   <entry>
     <title type="html"><![CDATA[Starting on the Blogging Path]]></title>
-    <link href="http://filipemoreira.com/blog/2012/01/16/starting-on-the-blogging-path/"/>
-    <updated>2012-01-16T10:07:00+01:00</updated>
-    <id>http://filipemoreira.com/blog/2012/01/16/starting-on-the-blogging-path</id>
+    <link href="http://coderelax.com/blog/2012/01/16/starting-on-the-blogging-path/"/>
+    <updated>2012-01-16T10:07:00+00:00</updated>
+    <id>http://coderelax.com/blog/2012/01/16/starting-on-the-blogging-path</id>
     <content type="html"><![CDATA[<p>After trying to blog and failing to continue writing I feel the need to start once more. Hopefully this time I&rsquo;ll be able to sit down and write about technical subjects that interest me.</p>
 
 <p>My intention with this blog is to share findings and document my learning process as I build and work on different applications.</p>

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://filipemoreira.com/sitemap.xml 
+Sitemap: http://coderelax.com/sitemap.xml 
